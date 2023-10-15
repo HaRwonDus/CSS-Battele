@@ -1,0 +1,72 @@
+<div class="line"></div>
+<div class="base"></div>
+<div class="circle"></div>
+<style>
+*{
+    background:#EFF2F1;
+    position:fixed;
+}
+  .line{
+      height:155px;
+      width:40px;
+      background:#1C1C1C;
+      top:75px;
+      left:128px;
+  }
+    .line:before{
+      content: '';
+      position:absolute;
+      height:95px;
+      width:47.4px;
+      background:#1C1C1C;
+      top:70px;
+      left:74px;
+      transform:skew(30deg);
+    }
+  .circle{
+    height:90px;
+    width:90px;
+    background:#1C1C1C;
+    top:60px;
+    left:170px;
+    border-radius:0 50% 50% 0;
+}
+    .circle:before{
+    content:'';
+    position:absolute;
+    background:#EFF2F1;
+    height:60px;
+    width:50px;
+    border-radius:0 30px 30px 0;
+    top:15px;
+  }
+  .base{
+    width:42px;
+    border-bottom:11px solid #1C1C1C;
+    border-left:19px solid transparent;
+    border-right:19px solid transparent;
+    top:230px;
+    left:110px;
+    box-shadow:0 9px #1C1C1C;
+  }
+  .base:before{
+    content:'';
+    position:absolute;
+    width:42px;
+    border-bottom:11px solid #1C1C1C;
+    border-right:19px solid transparent;
+    top:-162px;
+    transform:rotate(180deg);
+    left:-19.9px;
+    box-shadow:0 9px #1C1C1C;
+  }
+  .base:after{
+    content:'';
+    position:absolute;
+    width:35px;
+    border-bottom:14px solid #1C1C1C;
+    border-right:24px solid transparent;
+    left:101px;
+    box-shadow:0 6px #1C1C1C;
+  }
+</style>
